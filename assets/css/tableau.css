@@ -1,0 +1,126 @@
+
+
+table th {
+    font-family: sans-serif;
+    margin-top: 5px;
+    
+}
+
+ 
+
+table{
+    margin:auto;
+}
+
+  .imgtableau {
+
+    height:150px ;
+    width: 200px ; 
+  }
+
+/* On peut ici définir la taille de toutes les images du tableau en même temps */
+
+tr , td , th {
+
+  border:medium solid; 
+  border-collapse: collapse; 
+  border-width: 1px ;
+ 
+}
+/* on définie ici les bordures des colonnes et des lignes */
+
+.colimg{
+ text-align : center ; 
+}
+
+/* on aligne les images au centre du leur cellule */
+
+.price{
+  text-align: center; 
+  font-weight: bold; 
+}
+
+/* On met le prix au centre de la cellule et l'affiche en gras */
+
+
+
+
+
+
+#titre{
+  float:right;
+  margin-right: 20%;
+  font-family: "Myriad Web", "Myriad Pro", "Gill Sans", Helvetica, Arial, sans-serif;
+  font-size: 30px ;
+  line-height: 2.5;
+  
+}
+
+/* permet de déplacer "tout le jardin" sur la page float permet de rendre la boite flottante,
+de la mettre sur la droite. margin sert a recentrer le texte vers le centre de la page 
+On choisi la police Myriad Web
+font-size définie la taille 
+font-family définie la police
+ */
+
+
+
+ 
+nav  {
+  background-color: #146128 ;   
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 5px;
+  border-top-left-radius: 6px;
+
+}
+
+
+/* padding : topborder rightborder botborder leftborder */
+
+
+footer {
+    background-color: grey;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+}
+/* padding : topborder rightborder botborder leftborder */
+
+a {
+  color: white ; 
+ 
+}
+
+
+li{
+  display: inline;
+}
+
+
+
+/* nav , footer , a , li permettent d'afficher le menu de navigation , l'image de promo t le footer  */
+
+
+
+
+@media screen and (max-width :992px) {
+
+   
+    li {
+        display: block;
+    }
+
+
+    section {
+        width: auto;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    table{
+        font-size: 15px;
+    }
+
+    
+}

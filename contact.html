@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/formulaire.css">
+    <title>Jarditou - Nous contacter</title>
+
+</head>
+
+<body>
+    <header>
+        <figure class="row align-items-center  ">
+            <img src="assets/img/jarditou_logo.jpg" class="img-fluid col-6" alt="Logo Jarditou" class="img-fluid height: auto" width="100%">
+            <div class="col-6 h1 ">
+                <figcaption id="titre">Tout le jardin</figcaption>
+            </div>
+        </figure>
+
+    </header>
+
+
+    <nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"> <a href="index.html" class="nav-link" title="Accueil">Accueil</a></li>
+                <li class="nav-item"> <a href="tableau.html" class="nav-link" title="Tableau">Tableau</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" title="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <section class="container">
+
+        <form action="http://bienvu.net/script.php" method="POST" id="formulaire">
+            <div class="form-group">
+
+
+                <fieldset class="field1">
+                    <legend>Vos coordonnées</legend>
+
+                    <div class="nom form-group">
+                        <label for="nom">Votre nom: </label>
+                        <input class="form-control"  type="text" name="nom" id="nom" required>
+                        <span id="surname_span">*</span>
+                    </div>
+                    <div class="prenom form-group">
+                        <label for="prenom">Votre prénom: </label>
+                        <input  class="form-control" type="text" name="prenom" id="prenom" required>
+                        <span id="name_span">*</span>
+                    </div>
+                    <div class="sexe form-group row">
+
+                        <label for="sexe">Sexe:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" id=sex type="radio" name="sexe" value="homme" required> <label class="form-check-label">Homme</label>
+                       
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id=sex type="radio" name="sexe" value="femme" required> <label class="form-check-label">Femme</label>
+                            <span id="gender_span">*</span>
+                        </div>
+                    </div>
+                    <div class="ddn form-group">
+                        <label for="ddn">Date de Naissance</label>
+                        <input type="date" name="ddn" id="ddn" required>
+                        <span id="birth_span">*</span>
+                    </div>
+
+                    <div class="cp form-group">
+                        <label for="cp"> Code postal</label>
+                        <input  class="form-control" type="text" name="cp" id="cp">
+                        <span id=postal_span></span>
+                    </div>
+                    <div class="adresse form-group">
+                        <label for="adresse"> Adresse</label>
+                        <input class="form-control" type="text" name="adresse" id="adresse">
+                        <span id=adress_span></span>
+                    </div>
+                    <div class="mail form-group">
+                        <label for="mail"> Email</label>
+                        <input class="form-control" type="email" name="mail" id="mail">
+                        <span id=mail_span>*</span>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="field2">
+                    <legend>Votre demande</legend>
+                    <div class="sujet form-group">
+                        <label for="sujet">Sujet</label>
+                        <select class="form-control" name="couleur" id="select"  required>
+                            <option  value="empty" disabled selected>Votre demande
+                            <option  value="commande">Mes commandes
+                            <option  value="question">Question sur un produit
+                            <option  value="reclamation">Réclamations
+                            <option  value="autre">Autre
+                        </select>
+                        <span id="select_span">*</span>
+                    </div>
+
+                    <div class="zonetexte form-group ">
+                        <label for="zonetexte">Votre question</label>
+                        <textarea name="question" id="question" cols="20" rows="3" required></textarea>
+                        <span id="textarea_span">*</span>
+                    </div>
+                   
+
+                </fieldset>
+                <div class=validation>
+                    <input type="checkbox" name="accept" value="oui" id=accept required> J'accepte le traitement informatique de ce formulaire
+                    <span id="check_span"></span>
+                </div>
+                <div class="=bouton">
+                    <input type="submit" name="envoyer" id="send">
+                    <input type="reset" name="annuler" id="bouton">                   
+                </div>
+            </div>
+        </form>
+    </section>
+    
+
+    <footer class="row">
+        <ul>
+            <li><a href="mentions.html" title="metions légales">Mentions légales</a></li>
+            <li><a href="horaire.html" title="horaires">Horaires</a></li>
+            <li><a href="plan.html" title="plan">Plan du site</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/js/form.js"></script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,49 @@
+
+/* padding : topborder rightborder botborder leftborder */
+
+
+nav {
+    margin-bottom: 5px;
+    border-top-left-radius: 6px;
+}
+
+
+footer {
+    background-color: grey;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+}
+/* padding : topborder rightborder botborder leftborder */
+
+a {
+    color: white;
+}
+
+li {
+    display: inline;
+    margin-left: 5px;
+}
+
+
+  
+
+@media screen and (max-width :992px) {
+
+    li {
+        display: inline;
+       
+    }
+
+
+    body {
+        font-size: 20px;
+    }
+
+  
+    footer {
+        font-size: 15px;
+    }
+}
+    
+
+/* nav , footer , a , li permettent d'afficher le menu de navigation , l'image de promo t le footer  */

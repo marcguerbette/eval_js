@@ -1,0 +1,82 @@
+
+
+
+
+nav  {   
+    
+    margin-bottom: 5px;
+    border-top-left-radius: 6px;
+ 
+}
+
+
+footer{
+    background-color: grey ;
+    padding: 10px 20px 10px 20px;  
+    margin-top: 10px;
+
+    
+      
+}
+/* padding : topborder rightborder botborder leftborder */
+
+a{
+    color:white ;
+}
+li{
+    display: inline ;  
+    margin-left: 5px;  
+}
+
+
+/* nav , footer , a , li permettent d'afficher le menu de navigation , l'image de promo t le footer  */
+
+section{
+    width: 50%;
+    
+}
+
+/* C'est la largeur de l'onglet section */
+
+
+aside{
+  
+    background-color: grey ;
+  
+    
+   
+    
+
+}
+
+
+#promo {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width :992px)
+{
+    
+    aside{
+         
+        display: none;
+    }
+
+
+    body {
+        font-size: 20px;
+    }
+    section
+    {
+     width: auto ;
+    }
+
+    footer{
+        font-size:15px ; 
+    }
+ 
+ 
+}
+    
